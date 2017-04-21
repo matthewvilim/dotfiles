@@ -1,0 +1,11 @@
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set number
+syntax on
+set tags=./tags;
+set clipboard=unnamedplus
+set autoindent
+set smartindent
+set hlsearch
+set nowrap
