@@ -1,8 +1,0 @@
-alias ls 'ls --color=auto'
-alias grep 'grep --color=auto'
-alias sleep_screen 'lock_screen; xset dpms force off'
-alias sleep_comp 'lock_screen; systemctl suspend'
-alias lock_screen 'i3lock -e -p win -u -c 000000'
-setenv EDITOR vim
-
-bindkey -v
