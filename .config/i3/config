@@ -28,7 +28,8 @@ font pango:monospace 8
 
 exec --no-startup-id redshift
 exec_always --no-startup-id xautolock -time 5 -locker 'lock_screen' -detectsleep
-exec "setxkbmap us,es -option 'grp:alt_shift_toggle'"
+#exec "setxkbmap -layout us -variant dvp -option compose:102 -option numpad:shift3 -option kpdl:semi -option keypad:atm -option caps:escape"
+exec "setxkbmap caps:escape"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
