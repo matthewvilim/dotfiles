@@ -1,0 +1,7 @@
+set imap_user = "mvilim@stanford.edu"
+set smtp_url="smtps://mvilim@smtp.stanford.edu/"
+set from = "mvilim@stanford.edu"
+set realname = "Matthew Vilim"
+set folder="imaps://mvilim@stanford.edu@outlook.office365.com/"
+set spoolfile="+INBOX"
+set postponed="+Drafts"

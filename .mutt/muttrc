@@ -1,0 +1,18 @@
+# Folder hooks
+folder-hook 'matt.vilim@gmail.com' 'source ~/.mutt/matt.vilim@gmail.com.mutt'
+folder-hook 'mvilim@stanford.edu' 'source ~/.mutt/mvilim@stanford.edu.mutt'
+
+# Default account
+source ~/.mutt/matt.vilim@gmail.com.mutt
+#source ~/.mutt/mvilim@stanford.edu.mutt
+
+# Macros for switching accounts
+macro index <f1> '<sync-mailbox><enter-command>source ~/.mutt/matt.vilim@gmail.com.mutt<enter><change-folder>!<enter>'
+macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/mvilim@stanford.edu.mutt<enter><change-folder>!<enter>'
+
+# Fetch mail shortcut
+bind index G imap-fetch-mail
+
+set header_cache = ~/.mutt/cache/headers
+set message_cachedir = ~/.mutt/cache/bodies
+set certificate_file = ~/.mutt/certificates
