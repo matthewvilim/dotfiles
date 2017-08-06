@@ -1,14 +1,13 @@
 # Folder hooks
-folder-hook 'matt.vilim@gmail.com' 'source ~/.mutt/matt.vilim@gmail.com.mutt'
-folder-hook 'mvilim@stanford.edu' 'source ~/.mutt/mvilim@stanford.edu.mutt'
+folder-hook 'matt.vilim@gmail.com' 'source ~/.mutt/matt.vilim@gmail.com'
+folder-hook 'mvilim@stanford.edu' 'source ~/.mutt/mvilim@stanford.edu'
 
 # Default account
-source ~/.mutt/matt.vilim@gmail.com.mutt
-#source ~/.mutt/mvilim@stanford.edu.mutt
+source ~/.mutt/matt.vilim@gmail.com
 
 # Macros for switching accounts
-macro index <f1> '<sync-mailbox><enter-command>source ~/.mutt/matt.vilim@gmail.com.mutt<enter><change-folder>!<enter>'
-macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/mvilim@stanford.edu.mutt<enter><change-folder>!<enter>'
+macro index <f1> '<sync-mailbox><enter-command>source ~/.mutt/matt.vilim@gmail.com<enter><change-folder>!<enter>'
+macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/mvilim@stanford.edu<enter><change-folder>!<enter>'
 
 # Fetch mail shortcut
 bind index G imap-fetch-mail
