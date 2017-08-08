@@ -1,5 +1,4 @@
 # Set up the prompt
-
 autoload -Uz promptinit
 promptinit
 prompt redhat 
@@ -40,3 +39,6 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 setopt prompt_subst
 . ~/git-prompt.sh
 export RPROMPT=$'$(__git_ps1 "%s")'
+
+setopt rm_star_wait
+setopt correct

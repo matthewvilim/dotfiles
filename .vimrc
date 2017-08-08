@@ -4,6 +4,7 @@ set expandtab
 
 set number
 syntax on
+set showcmd
 
 set tags=./tags;
 
@@ -14,6 +15,7 @@ set smartindent
 set hlsearch
 
 set nowrap
+set esckeys
 
 set background=dark
 colorscheme solarized
