@@ -42,5 +42,3 @@ export RPROMPT=$'$(__git_ps1 "%s")'
 
 setopt rm_star_wait
 setopt correct
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
