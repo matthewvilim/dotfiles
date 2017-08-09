@@ -31,6 +31,7 @@ exec_always --no-startup-id xautolock -time 5 -locker 'lock_screen' -detectsleep
 exec "xset r rate 200 30"
 exec "xkbset accessx sticky -twokey -latchlock"
 exec "xkbset exp 1 =accessx =sticky =twokey =latchlock"
+exec "safeeyes"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
