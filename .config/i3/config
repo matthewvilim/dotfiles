@@ -163,17 +163,16 @@ bar {
   status_command i3status --config ~/.config/i3/i3status.conf
     colors {
       separator #073642
-        background #002b36
+        background #073642
         statusline #859900
-        focused_workspace #859900 #859900 #002b36
-        inactive_workspace #002b36 #002b36 #93a1a1
+        focused_workspace #859900 #859900 #073642
+        inactive_workspace #073642 #073642 #93a1a1
     }
 }
 
-client.focused #859900 #859900 #fdf6e3 #6c71c4
-client.focused_inactive #073642 #073642 #eee8d5 #6c71c4
-client.unfocused #073642 #073642 #93a1a1 #586e75
-client.urgent #d33682 #d33682 #fdf6e3 #dc322f
+client.focused #073642 #073642 #93a1a1 #073642
+client.focused_inactive #073642 #073642 #93a1a1 #073642
+client.unfocused #002b36 #002b36 #93a1a1 #073642
 
-new_window pixel 1
+new_window pixel 2
 hide_edge_borders both
