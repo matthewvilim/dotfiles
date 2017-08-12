@@ -27,7 +27,7 @@ font xft:Inconsolata 10
 # font, it doesn’t scale on retina/hidpi displays.
 
 exec --no-startup-id redshift
-exec_always --no-startup-id xautolock -time 5 -locker 'lock_screen' -detectsleep
+exec_always --no-startup-id xautolock -time 5 -locker "i3lock -u -c 002b36" -detectsleep
 exec "xset r rate 200 30"
 exec "xkbset accessx sticky -twokey -latchlock"
 exec "xkbset exp 1 =accessx =sticky =twokey =latchlock"
@@ -41,6 +41,8 @@ bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+q kill
+
+bindsym $mod+Shift+q exec xautolock -locknow
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run -i -nb '#002b36' -nf '#93a1a1' -sb '#93a1a1' -sf '#002b36'
