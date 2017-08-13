@@ -164,10 +164,10 @@ exec --no-startup-id xsetroot -solid "#002b36"
 bar {
   status_command i3status --config ~/.config/i3/i3status.conf
     colors {
-      separator #073642
+        separator #073642
         background #073642
         statusline #859900
-        focused_workspace #859900 #859900 #073642
+        focused_workspace #93a1a1 #93a1a1 #073642
         inactive_workspace #073642 #073642 #93a1a1
     }
 }
