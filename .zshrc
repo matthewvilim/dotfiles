@@ -3,7 +3,7 @@ autoload -Uz promptinit
 promptinit
 prompt redhat 
 
-setopt histignorealldups sharehistory
+setopt histignorealldups
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -v
@@ -42,3 +42,8 @@ export RPROMPT=$'$(__git_ps1 "%s")'
 
 setopt rm_star_wait
 setopt correct
+
+export PATH=/opt/cisco/anyconnect/bin:$PATH
+
+eval `dircolors $HOME/.dir_colors`
+alias ls='ls --color=auto'
