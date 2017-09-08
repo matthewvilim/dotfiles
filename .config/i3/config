@@ -162,19 +162,5 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 exec --no-startup-id xsetroot -solid "#002b36"
 bar {
-  status_command i3status --config ~/.config/i3/i3status.conf
-    colors {
-        separator #073642
-        background #073642
-        statusline #859900
-        focused_workspace #93a1a1 #93a1a1 #073642
-        inactive_workspace #073642 #073642 #93a1a1
-    }
+  status_command i3status
 }
-
-client.focused #073642 #073642 #93a1a1 #073642
-client.focused_inactive #073642 #073642 #93a1a1 #073642
-client.unfocused #002b36 #002b36 #93a1a1 #073642
-
-new_window pixel 2
-hide_edge_borders both
