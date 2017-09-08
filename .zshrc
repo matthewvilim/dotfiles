@@ -46,4 +46,4 @@ setopt correct
 export PATH=/opt/cisco/anyconnect/bin:$PATH
 
 eval `dircolors $HOME/.dir_colors`
-alias ls='ls -l --color=auto'
+alias ls='ls -1 --color=auto'
