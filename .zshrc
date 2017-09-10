@@ -47,3 +47,5 @@ export PATH=/opt/cisco/anyconnect/bin:$PATH
 
 eval `dircolors $HOME/.dir_colors`
 alias ls='ls -1 --color=auto'
+export VISUAL=vim
+export EDITOR="$VISUAL"
