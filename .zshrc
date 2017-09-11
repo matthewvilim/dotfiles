@@ -47,7 +47,7 @@ export PATH=/opt/cisco/anyconnect/bin:$PATH
 
 eval `dircolors $HOME/.dir_colors`
 alias ls='ls -1 --color=auto'
-alias vpn='sudo openconnect su-vpn.stanford.edu -b'
+alias vpn='sudo openconnect su-vpn.stanford.edu'
 alias sleep='sudo pm-suspend'
 export VISUAL=vim
 export EDITOR="$VISUAL"
