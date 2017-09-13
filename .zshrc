@@ -42,6 +42,7 @@ export RPROMPT=$'$(__git_ps1 "%s")'
 
 setopt rm_star_wait
 setopt correct
+setopt autocd
 
 export PATH=/opt/cisco/anyconnect/bin:$PATH
 
@@ -51,3 +52,5 @@ alias vpn='sudo openconnect su-vpn.stanford.edu'
 alias sleep='sudo pm-suspend'
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+chpwd() ls
