@@ -15,6 +15,7 @@ set spell
 
 set hlsearch
 set smartcase
+set ignorecase
 set incsearch
 
 set esckeys
