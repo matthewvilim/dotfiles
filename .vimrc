@@ -14,6 +14,8 @@ set smartindent
 set spell
 
 set hlsearch
+set smartcase
+set incsearch
 
 set esckeys
 
