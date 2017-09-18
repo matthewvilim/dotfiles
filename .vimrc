@@ -11,11 +11,10 @@ set tags=./tags;
 
 set autoindent
 set smartindent
-
+set spell
 
 set hlsearch
 
-set nowrap
 set esckeys
 
 set background=dark

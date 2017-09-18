@@ -7,3 +7,5 @@
 	pager = less -+X -+F
 [pager]
   status = true
+[merge]
+  tool = vimdiff
