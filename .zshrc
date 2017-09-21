@@ -47,9 +47,14 @@ setopt autocd
 export PATH=/opt/cisco/anyconnect/bin:$PATH
 
 eval `dircolors $HOME/.dir_colors`
-alias ls='ls -1 --color=auto'
+alias ls='ls -1 -A --color=auto --group-directories-first'
+alias less='less -R'
+alias grep='grep --color=always'
 alias vpn='sudo openconnect su-vpn.stanford.edu'
 alias sleep='sudo pm-suspend'
+alias cp='cp -i'
+alias ln='ln -i'
+alias mv='mv -i'
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
