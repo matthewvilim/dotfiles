@@ -43,13 +43,14 @@ export RPROMPT=$'$(__git_ps1 "%s")'
 setopt rm_star_wait
 setopt correct
 setopt autocd
+setopt menu_complete
 
 export PATH=/opt/cisco/anyconnect/bin:$PATH
 
 eval `dircolors $HOME/.dir_colors`
 alias ls='ls -1 -A --color=always --group-directories-first'
 alias less='less -R'
-alias grep='grep --color=always'
+alias grep='grep --color=always --exclude=tags'
 alias vpn='sudo openconnect su-vpn.stanford.edu'
 alias sleep='sudo pm-suspend'
 alias cp='cp -i'
