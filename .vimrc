@@ -16,7 +16,10 @@ set spell
 set hlsearch
 set smartcase
 set ignorecase
+set cursorline
 set incsearch
+
+set completeopt=longest,menuone,preview
 
 set esckeys
 
