@@ -21,8 +21,6 @@ set incsearch
 
 set completeopt=longest,menuone,preview
 
-set esckeys
-
 set background=dark
 colorscheme solarized
 let g:solarized_diffmode="high"
