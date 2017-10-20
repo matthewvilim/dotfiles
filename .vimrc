@@ -1,3 +1,4 @@
+set wildignorecase
 set autochdir
 set tabstop=2
 set softtabstop=2
