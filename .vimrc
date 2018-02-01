@@ -9,6 +9,7 @@ set number
 set relativenumber
 syntax on
 set showcmd
+set scrolloff=10
 
 set tags=./tags;
 
@@ -21,7 +22,6 @@ set smartcase
 set ignorecase
 set cursorline
 set incsearch
-set scrolloff=10
 
 set completeopt=longest,menuone,preview
 set timeoutlen=1000 ttimeoutlen=0
