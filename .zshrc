@@ -74,6 +74,6 @@ chpwd() ls
 export CLOCK_FREQ_MHZ='50'
 export XILINX_VIVADO=/opt/Xilinx/Vivado/2017.1
 export PATH=$PATH:$XILINX_VIVADO/bin
-source $XILINX_VIVADO/settings64.sh
+#source $XILINX_VIVADO/settings64.sh
 alias zycp='scp $(basename $(pwd)).tar.gz mvilim@holodeck-zc706:'
 alias zynq='ssh mvilim@holodeck-zc706'
