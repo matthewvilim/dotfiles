@@ -31,7 +31,7 @@ exec_always --no-startup-id xautolock -time 15 -locker "i3lock -u -c 002b36" -de
 exec "xset r rate 200 30"
 exec "xkbset accessx sticky -twokey -latchlock"
 exec "xkbset exp 1 =accessx =sticky =twokey =latchlock"
-exec "safeeyes"
+exec "xmodmap $HOME/.xmodmap"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
