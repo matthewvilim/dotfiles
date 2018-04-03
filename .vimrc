@@ -31,3 +31,5 @@ set backspace=indent,eol,start
 set background=dark
 colorscheme solarized
 let g:solarized_diffmode="high"
+
+nnoremap <C-h> <C-]>
