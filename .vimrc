@@ -33,3 +33,4 @@ colorscheme solarized
 let g:solarized_diffmode="high"
 
 nnoremap <C-h> <C-]>
+nnoremap <C-n> g]
