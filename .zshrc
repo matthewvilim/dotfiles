@@ -43,14 +43,14 @@ export RPROMPT=$'$(__git_ps1 "%s")'
 setopt rm_star_wait
 setopt correct
 setopt autocd
-#setopt menu_complete
+unsetopt listambiguous
 
 export PATH=/opt/cisco/anyconnect/bin:$PATH
 export VCS_HOME=/cad/synopsys/vcs/K-2015.09-SP2-7
 export LM_LICENSE_FILE=27000@cadlic0.stanford.edu:$LM_LICENSE_FILE
 
 eval `dircolors $HOME/.dir_colors`
-alias ls='ls -1 --color=always --group-directories-first'
+alias ls='ls -1 -A --color=always --group-directories-first'
 alias less='less -R'
 alias grep='grep --color=always --exclude=tags'
 alias vpn='sudo openconnect su-vpn.stanford.edu'
@@ -67,11 +67,12 @@ export VCS_HOME=/cad/synopsys/vcs/K-2015.09-SP2-7
 export PATH=$HOME/sbt/bin:$VCS_HOME/amd64/bin:$PATH
 export PIR_HOME=$HOME/pir
 export SPATIAL_HOME=$HOME/spatial-lang
+export PLASTICINE_HOME=$HOME/plasticine
 export _JAVA_OPTIONS="-Xmx32g -Xss8912k -Xms16g"
 
 chpwd() ls
 
-export CLOCK_FREQ_MHZ='50'
+export CLOCK_FREQ_MHZ='100'
 export XILINX_VIVADO=/opt/Xilinx/Vivado/2017.1
 export PATH=$PATH:$XILINX_VIVADO/bin
 #source $XILINX_VIVADO/settings64.sh
