@@ -4,6 +4,8 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
+set foldmethod=syntax
+set foldlevelstart=20
 
 set number
 set relativenumber
@@ -19,7 +21,6 @@ set spell
 
 set hlsearch
 set smartcase
-set ignorecase
 set cursorline
 set incsearch
 
