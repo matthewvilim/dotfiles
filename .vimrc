@@ -6,6 +6,8 @@ set shiftwidth=2
 set expandtab
 set foldmethod=syntax
 set foldlevelstart=20
+set ignorecase
+set smartcase
 
 set number
 set relativenumber
