@@ -51,7 +51,7 @@ export VCS_HOME=/cad/synopsys/vcs/K-2015.09-SP2-7
 export LM_LICENSE_FILE=27000@cadlic0.stanford.edu:$LM_LICENSE_FILE
 
 eval `dircolors $HOME/.dir_colors`
-alias ls='ls -1 -A --color=always --group-directories-first'
+alias ls='ls -1 --color=always --group-directories-first'
 alias less='less -R'
 alias grep='grep --color=always --exclude=tags'
 alias vpn='sudo openconnect su-vpn.stanford.edu'
