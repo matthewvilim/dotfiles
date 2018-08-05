@@ -37,3 +37,6 @@ let g:solarized_diffmode="high"
 
 nnoremap <C-h> <C-]>
 nnoremap <C-n> g<C-]>
+
+autocmd BufNewFile,BufRead *.sv set syntax=verilog
+autocmd FileType make setlocal noexpandtab
