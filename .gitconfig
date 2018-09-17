@@ -13,3 +13,5 @@
   tool = vimdiff
 [merge]
   tool = vimdiff
+[alias]
+  wdiff = diff --color-words
