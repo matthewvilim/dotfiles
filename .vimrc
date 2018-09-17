@@ -21,6 +21,8 @@ set autoindent
 set smartindent
 set spell
 
+set showbreak=..
+
 set hlsearch
 set smartcase
 set cursorline
