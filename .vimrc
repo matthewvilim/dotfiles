@@ -63,7 +63,7 @@ nnoremap <C-n> g<C-]>
 
 let g:ctrlp_extensions = ['tag'] 
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPTag'
+let g:ctrlp_cmd = 'CtrlP'
 
 nmap <space> <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
