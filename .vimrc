@@ -25,12 +25,13 @@ autocmd VimEnter * wincmd l
 let g:NERDTreeDirArrowExpandable = '+'
 let g:NERDTreeDirArrowCollapsible = '-'
 
-set background=dark
-colorscheme solarized8
 
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+set background=dark
+colorscheme solarized8
 
 set tabstop=2
 set softtabstop=2
@@ -41,7 +42,6 @@ set smartcase
 
 set number
 set relativenumber
-syntax on
 set showcmd
 set scrolloff=10
 
@@ -58,15 +58,8 @@ set incsearch
 
 set timeoutlen=1000 ttimeoutlen=0
 
-"nnoremap <C-h> <C-]>
-"nnoremap <C-n> g<C-]>
-
-let g:indent_guides_enable_on_vim_startup = 1
+nnoremap <C-h> <C-]>
+nnoremap <C-n> g<C-]>
 
 nmap <space> <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
-
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap  <C-H> <C-W><C-H>
