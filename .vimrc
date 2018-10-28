@@ -52,9 +52,9 @@ set smartindent
 set spell
 
 set hlsearch
+set incsearch
 set smartcase
 set cursorline
-set incsearch
 
 set timeoutlen=1000 ttimeoutlen=0
 
@@ -67,3 +67,5 @@ let g:ctrlp_cmd = 'CtrlPTag'
 
 nmap <space> <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
+let g:EasyMotion_use_upper = 1
+let g:EasyMotion_keys='AOEUIDHTNSPYFGCRLQJKXBMWV'
