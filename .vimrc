@@ -65,3 +65,8 @@ nmap <backspace> <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
 let g:EasyMotion_use_upper = 1
 let g:EasyMotion_keys='AOEUIDHTNSPYFGCRLQJKXBMWV'
+
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
