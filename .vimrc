@@ -6,10 +6,10 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'lifepillar/vim-solarized8'
-Plug 'valloric/youcompleteme'
+Plug 'valloric/youcompleteme', { 'do': './install.py' }
 Plug 'kien/rainbow_parentheses.vim'
-Plug 'kien/ctrlp.vim'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
 call plug#end()
@@ -18,13 +18,6 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
-
-autocmd vimenter * NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-autocmd VimEnter * wincmd l
-let g:NERDTreeDirArrowExpandable = '+'
-let g:NERDTreeDirArrowCollapsible = '-'
-
 
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -58,14 +51,17 @@ set cursorline
 
 set timeoutlen=1000 ttimeoutlen=0
 
-nnoremap <C-h> <C-]>
-nnoremap <C-n> g<C-]>
+let mapleader = "\<space>"
 
-let g:ctrlp_extensions = ['tag'] 
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPLastMode'
+map <Leader>h <C-]>
+nnoremap  <Leader>t <C-t>
+nnoremap  <Leader>n g<C-]>
 
-nmap <space> <Plug>(easymotion-overwin-f2)
+nnoremap <silent> <leader>u :Files<CR>
+nnoremap <silent> <leader>e :Tags<CR>
+nnoremap <silent> <leader>o :History<CR>
+
+nmap <backspace> <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
 let g:EasyMotion_use_upper = 1
 let g:EasyMotion_keys='AOEUIDHTNSPYFGCRLQJKXBMWV'
