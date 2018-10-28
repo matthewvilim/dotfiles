@@ -61,5 +61,9 @@ set timeoutlen=1000 ttimeoutlen=0
 nnoremap <C-h> <C-]>
 nnoremap <C-n> g<C-]>
 
+let g:ctrlp_extensions = ['tag'] 
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPTag'
+
 nmap <space> <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
