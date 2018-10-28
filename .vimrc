@@ -53,13 +53,18 @@ set timeoutlen=1000 ttimeoutlen=0
 
 let mapleader = "\<space>"
 
-map <Leader>h <C-]>
-nnoremap  <Leader>t <C-t>
-nnoremap  <Leader>n g<C-]>
+map <Leader>u <C-]>
+nnoremap  <Leader>U g<C-]>
+nnoremap  <Leader>p <C-t>
 
-nnoremap <silent> <leader>u :Files<CR>
-nnoremap <silent> <leader>e :Tags<CR>
-nnoremap <silent> <leader>o :History<CR>
+nnoremap <leader>f :GFiles<CR>
+nnoremap <leader>F :Files<CR>
+nnoremap <leader>t :BTags<CR>
+nnoremap <leader>T :Tags<CR>
+nnoremap <leader>h :History<CR>
+nnoremap <leader>l :Lines<CR>
+nnoremap <leader>L :BLines<CR>
+nnoremap <leader>a :Ag<CR>
 
 nmap <backspace> <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
