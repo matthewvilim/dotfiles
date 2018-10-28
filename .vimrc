@@ -11,7 +11,6 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'jiangmiao/auto-pairs'
-Plug 'mhinz/vim-signify'
 Plug 'easymotion/vim-easymotion'
 call plug#end()
 
@@ -29,6 +28,7 @@ let g:NERDTreeDirArrowCollapsible = '-'
 set background=dark
 colorscheme solarized8
 
+set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
@@ -58,10 +58,10 @@ set incsearch
 
 set timeoutlen=1000 ttimeoutlen=0
 
-set termguicolors
-
 nnoremap <C-h> <C-]>
 nnoremap <C-n> g<C-]>
+
+let g:indent_guides_enable_on_vim_startup = 1
 
 nmap <space> <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
@@ -71,3 +71,4 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+let mapleader = "\<space>"
