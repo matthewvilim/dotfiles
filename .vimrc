@@ -25,8 +25,8 @@ autocmd VimEnter * wincmd l
 let g:NERDTreeDirArrowExpandable = '+'
 let g:NERDTreeDirArrowCollapsible = '-'
 
-set background=dark
 colorscheme solarized8
+set background=dark
 
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
