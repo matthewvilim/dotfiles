@@ -1,11 +1,7 @@
-set wildignorecase
-set autochdir
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
-set foldmethod=syntax
-set foldlevelstart=20
 set ignorecase
 set smartcase
 
@@ -17,28 +13,51 @@ set scrolloff=10
 
 set tags=./tags;
 
-set autoindent
-set smartindent
+"set autoindent
+"set smartindent
 set spell
-
-set showbreak=..
 
 set hlsearch
 set smartcase
 set cursorline
 set incsearch
 
-set completeopt=longest,menuone,preview
 set timeoutlen=1000 ttimeoutlen=0
-set laststatus=2
-set backspace=indent,eol,start
 
-set background=dark
-colorscheme solarized
-let g:solarized_diffmode="high"
+
+set termguicolors
 
 nnoremap <C-h> <C-]>
 nnoremap <C-n> g<C-]>
 
-autocmd BufNewFile,BufRead *.sv set syntax=verilog
-autocmd FileType make setlocal noexpandtab
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+Plug 'lifepillar/vim-solarized8'
+Plug 'valloric/youcompleteme'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'jiangmiao/auto-pairs'
+call plug#end()
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd VimEnter * wincmd l
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
+
+set background=dark
+colorscheme solarized8
+
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
