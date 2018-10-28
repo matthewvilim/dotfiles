@@ -1,6 +1,6 @@
-alias ls='ls -1 --color=always --group-directories-first'
+alias ls='ls -1 --color=auto --group-directories-first'
 alias less='less -R'
-alias grep='grep --color=always --exclude=tags'
+alias grep='grep --color=auto --exclude=tags'
 alias vpn='sudo openconnect su-vpn.stanford.edu'
 alias sleep='sudo pm-suspend'
 alias cp='cp -i'
@@ -9,8 +9,10 @@ alias mv='mv -i'
 
 export VISUAL=vim
 
-. ~/git-prompt.sh
+source ~/git-prompt.sh
+PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
+export PATH=$HOME/.local/bin:$PATH
 export PATH=/opt/cisco/anyconnect/bin:$PATH
 export VCS_HOME=/cad/synopsys/vcs/K-2015.09-SP2-7
 
@@ -29,3 +31,4 @@ alias zycp='scp $(basename $(pwd)).tar.gz mvilim@holodeck-zc706:'
 alias zynq='ssh mvilim@holodeck-zc706'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
