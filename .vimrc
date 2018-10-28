@@ -9,7 +9,7 @@ Plug 'lifepillar/vim-solarized8'
 Plug 'valloric/youcompleteme'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'kien/ctrlp.vim'
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'mhinz/vim-signify'
 Plug 'easymotion/vim-easymotion'
@@ -63,10 +63,11 @@ set termguicolors
 nnoremap <C-h> <C-]>
 nnoremap <C-n> g<C-]>
 
-let mapleader = "\<space>"
-map <Leader> <Plug>(easymotion-prefix)
+nmap <space> <Plug>(easymotion-overwin-f2)
+let g:EasyMotion_smartcase = 1
 
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
