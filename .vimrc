@@ -85,6 +85,8 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
+set pastetoggle=<leader>p
+
 nnoremap <silent> <leader>w :w<CR>
 nnoremap <silent> <leader>x :x<CR>
 nnoremap <silent> <leader>q :q<CR>

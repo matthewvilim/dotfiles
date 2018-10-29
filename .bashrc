@@ -1,3 +1,9 @@
+export HISTCONTROL=ignoredups:erasedups
+shopt -s histappend
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+export PROMPT_COMMAND='history -a'
+
 alias ls='ls -1 --color=auto --group-directories-first'
 alias less='less -R'
 alias grep='grep --color=auto --exclude=tags'
@@ -6,6 +12,8 @@ alias sleep='sudo pm-suspend'
 alias cp='cp -i'
 alias ln='ln -i'
 alias mv='mv -i'
+alias v='vim'
+alias g='git'
 
 export VISUAL=vim
 
@@ -31,6 +39,9 @@ alias zycp='scp $(basename $(pwd)).tar.gz mvilim@holodeck-zc706:'
 alias zynq='ssh mvilim@holodeck-zc706'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 
 _gen_fzf_default_opts() {
 

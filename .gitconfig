@@ -14,4 +14,10 @@
 [merge]
   tool = vimdiff
 [alias]
-  wdiff = diff --color-words
+  a = add
+  au = add -u
+  c = commit
+  d = diff
+  ds = diff --staged
+  dw = diff --color-words
+  s = status
