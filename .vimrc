@@ -37,6 +37,10 @@ set expandtab
 set ignorecase
 set smartcase
 
+set breakindent
+set showbreak=>>>
+set breakindentopt=sbr
+
 set number
 set relativenumber
 set showcmd
@@ -61,10 +65,9 @@ map <Leader>u <C-]>
 map <Leader>U g<C-]>
 map <Leader>e <C-t>
 
-nnoremap <silent> <leader>f :GFiles<CR>
-nnoremap <silent> <leader>F :Files<CR>
-nnoremap <silent> <leader>t :BTags<CR>
-nnoremap <silent> <leader>T :Tags<CR>
+nnoremap <silent> <leader>n :GFiles<CR>
+nnoremap <silent> <leader>N :Files<CR>
+nnoremap <silent> <leader>t :Tags<CR>
 nnoremap <silent> <leader>h :History<CR>
 nnoremap <silent> <leader>l :Lines<CR>
 nnoremap <silent> <leader>L :BLines<CR>
