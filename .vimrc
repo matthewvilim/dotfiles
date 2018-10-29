@@ -66,17 +66,17 @@ set timeoutlen=1000 ttimeoutlen=0
 
 let mapleader = "\<space>"
 
-map <Leader>u <C-]>
-map <Leader>U g<C-]>
-map <Leader>e <C-t>
+map <leader>u <C-]>
+map <leader>U g<C-]>
+map <leader>e <C-t>
 
-nnoremap <silent> <leader>n :GFiles<CR>
-nnoremap <silent> <leader>N :Files<CR>
-nnoremap <silent> <leader>t :Tags<CR>
-nnoremap <silent> <leader>h :History<CR>
-nnoremap <silent> <leader>s :Lines<CR>
-nnoremap <silent> <leader>S :BLines<CR>
-nnoremap <silent> <leader>g :Ag<CR>
+nnoremap <silent> <leader>n :GFiles<cr>
+nnoremap <silent> <leader>N :Files<cr>
+nnoremap <silent> <leader>t :Tags<cr>
+nnoremap <silent> <leader>h :History<cr>
+nnoremap <silent> <leader>s :Lines<cr>
+nnoremap <silent> <leader>S :BLines<cr>
+nnoremap <silent> <leader>g :Ag<cr>
 
 nmap <backspace> <Plug>(easymotion-overwin-f2)
 
@@ -86,8 +86,9 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
 set pastetoggle=<leader>p
+map <silent> <leader>i :noh<cr>
 
-nnoremap <silent> <leader>w :w<CR>
-nnoremap <silent> <leader>x :x<CR>
-nnoremap <silent> <leader>q :q<CR>
-nnoremap <silent> <leader>Q :q!<CR>
+nnoremap <silent> <leader>w :w<cr>
+nnoremap <silent> <leader>x :x<cr>
+nnoremap <silent> <leader>q :q<cr>
+nnoremap <silent> <leader>Q :q!<cr>
