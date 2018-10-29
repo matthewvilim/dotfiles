@@ -41,6 +41,11 @@ set breakindent
 set showbreak=>>>
 set breakindentopt=sbr
 
+set linebreak
+set textwidth=100
+set colorcolumn=+1
+"set formatoptions+=ant
+
 set number
 set relativenumber
 set showcmd
@@ -69,8 +74,8 @@ nnoremap <silent> <leader>n :GFiles<CR>
 nnoremap <silent> <leader>N :Files<CR>
 nnoremap <silent> <leader>t :Tags<CR>
 nnoremap <silent> <leader>h :History<CR>
-nnoremap <silent> <leader>l :Lines<CR>
-nnoremap <silent> <leader>L :BLines<CR>
+nnoremap <silent> <leader>s :Lines<CR>
+nnoremap <silent> <leader>S :BLines<CR>
 nnoremap <silent> <leader>g :Ag<CR>
 
 nmap <backspace> <Plug>(easymotion-overwin-f2)
