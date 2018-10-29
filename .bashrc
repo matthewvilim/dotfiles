@@ -15,6 +15,7 @@ alias mv='mv -i'
 alias v='vim'
 alias g='git'
 alias l='ls'
+alias ex='exit'
 
 export VISUAL=vim
 
