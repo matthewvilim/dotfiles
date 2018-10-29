@@ -41,6 +41,7 @@ alias zynq='ssh mvilim@holodeck-zc706'
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+export FZF_COMPLETION_TRIGGER=''
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 
 _gen_fzf_default_opts() {
