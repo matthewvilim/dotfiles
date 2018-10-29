@@ -19,6 +19,10 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
+let g:EasyMotion_smartcase = 1
+let g:EasyMotion_use_upper = 1
+let g:EasyMotion_keys='AOEUIDHTNSPYFGCRLQJKXBMWV'
+
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
@@ -67,9 +71,6 @@ nnoremap <silent> <leader>L :BLines<CR>
 nnoremap <silent> <leader>g :Ag<CR>
 
 nmap <backspace> <Plug>(easymotion-overwin-f2)
-let g:EasyMotion_smartcase = 1
-let g:EasyMotion_use_upper = 1
-let g:EasyMotion_keys='AOEUIDHTNSPYFGCRLQJKXBMWV'
 
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
