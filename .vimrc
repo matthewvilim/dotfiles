@@ -54,17 +54,17 @@ set timeoutlen=1000 ttimeoutlen=0
 let mapleader = "\<space>"
 
 map <Leader>u <C-]>
-nnoremap  <Leader>U g<C-]>
-nnoremap  <Leader>p <C-t>
+map <Leader>U g<C-]>
+map <Leader>e <C-t>
 
-nnoremap <leader>f :GFiles<CR>
-nnoremap <leader>F :Files<CR>
-nnoremap <leader>t :BTags<CR>
-nnoremap <leader>T :Tags<CR>
-nnoremap <leader>h :History<CR>
-nnoremap <leader>l :Lines<CR>
-nnoremap <leader>L :BLines<CR>
-nnoremap <leader>a :Ag<CR>
+nnoremap <silent> <leader>f :GFiles<CR>
+nnoremap <silent> <leader>F :Files<CR>
+nnoremap <silent> <leader>t :BTags<CR>
+nnoremap <silent> <leader>T :Tags<CR>
+nnoremap <silent> <leader>h :History<CR>
+nnoremap <silent> <leader>l :Lines<CR>
+nnoremap <silent> <leader>L :BLines<CR>
+nnoremap <silent> <leader>g :Ag<CR>
 
 nmap <backspace> <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
@@ -75,3 +75,8 @@ noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
+
+nnoremap <silent> <leader>w :w<CR>
+nnoremap <silent> <leader>x :x<CR>
+nnoremap <silent> <leader>q :q<CR>
+nnoremap <silent> <leader>Q :q!<CR>
