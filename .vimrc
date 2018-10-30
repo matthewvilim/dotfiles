@@ -92,3 +92,5 @@ nnoremap <silent> <leader>w :w<cr>
 nnoremap <silent> <leader>x :x<cr>
 nnoremap <silent> <leader>q :q<cr>
 nnoremap <silent> <leader>Q :q!<cr>
+
+set fo+=aw
