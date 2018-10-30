@@ -73,3 +73,4 @@ export FZF_DEFAULT_OPTS="
 }
 
 _gen_fzf_default_opts
+

@@ -11,17 +11,12 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
-
-let g:EasyMotion_smartcase = 1
-let g:EasyMotion_use_upper = 1
-let g:EasyMotion_keys='AOEUIDHTNSPYFGCRLQJKXBMWV'
 
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -38,13 +33,12 @@ set ignorecase
 set smartcase
 
 set breakindent
-set showbreak=>>>
+set showbreak=>>
 set breakindentopt=sbr
 
 set linebreak
-set textwidth=100
-set colorcolumn=+1
-"set formatoptions+=ant
+"set textwidth=100
+"set colorcolumn=+1
 
 set number
 set relativenumber
@@ -78,13 +72,6 @@ nnoremap <silent> <leader>s :Lines<cr>
 nnoremap <silent> <leader>S :BLines<cr>
 nnoremap <silent> <leader>g :Ag<cr>
 
-nmap <backspace> <Plug>(easymotion-overwin-f2)
-
-noremap <C-h> <C-w>h
-noremap <C-j> <C-w>j
-noremap <C-k> <C-w>k
-noremap <C-l> <C-w>l
-
 set pastetoggle=<leader>p
 map <silent> <leader>i :noh<cr>
 
@@ -93,4 +80,4 @@ nnoremap <silent> <leader>x :x<cr>
 nnoremap <silent> <leader>q :q<cr>
 nnoremap <silent> <leader>Q :q!<cr>
 
-set fo+=aw
+"set fo+=aw
