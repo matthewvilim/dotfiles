@@ -3,3 +3,9 @@ set show-mode-in-prompt on
 set keyseq-timeout 0
 set completion-ignore-case on
 set show-all-if-ambiguous on
+
+set keymap vi-command
+Control-l: clear-screen
+
+set keymap vi-insert
+Control-l: clear-screen
