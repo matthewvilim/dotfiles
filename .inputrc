@@ -3,10 +3,3 @@ set show-mode-in-prompt on
 set keyseq-timeout 0
 set completion-ignore-case on
 set show-all-if-ambiguous on
-
-set keymap vi-command
-" h": "i\C-r\ex"
-" c": "\ec\ex"
-
-set keymap vi-insert
-"\C-l": clear-screen
