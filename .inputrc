@@ -5,9 +5,8 @@ set completion-ignore-case on
 set show-all-if-ambiguous on
 
 set keymap vi-command
-" h": "\C-r"
-"\C-d": "i\C-r"
-set keymap vi-insert
-#"hh": "\C-r"
-#"\C-d": "\ec"
+" h": "i\C-r\ex"
+" c": "\ec\ex"
 
+set keymap vi-insert
+"\C-l": clear-screen

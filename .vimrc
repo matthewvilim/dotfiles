@@ -37,8 +37,8 @@ set showbreak=>>
 set breakindentopt=sbr
 
 set linebreak
-"set textwidth=100
-"set colorcolumn=+1
+set textwidth=100
+set colorcolumn=+1
 
 set number
 set relativenumber
@@ -80,4 +80,4 @@ nnoremap <silent> <leader>x :x<cr>
 nnoremap <silent> <leader>q :q<cr>
 nnoremap <silent> <leader>Q :q!<cr>
 
-"set fo+=aw
+set fo+=aw
