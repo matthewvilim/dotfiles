@@ -72,3 +72,12 @@ export FZF_DEFAULT_OPTS="
 
 _gen_fzf_default_opts
 
+vv() {
+  local file
+  file="$(fzf)" && vim "$file"
+}
+
+dd() {
+  local dir
+  dir=$(find ${1:-.} -path '*/\.*' -prune -o -type d -print 2> /dev/null | fzf +m) && cd "$dir"
+}
