@@ -19,6 +19,9 @@ alias zynq 'ssh mvilim@holodeck-zc706'
 
 alias vpn 'sudo openconnect su-vpn.stanford.edu'
 alias sleep 'sudo pm-suspend'
+abbr l 'ls'
+abbr g 'git'
+abbr v 'vim'
 
 #set -gx FZF_DEFAULT_COMMAND  'rg --files --no-ignore-vcs --hidden'
 
@@ -26,7 +29,7 @@ function c
   fzf-cd-widget
 end
 
-function v
+function n
   set file (fzf)
   and vim $file
 end
