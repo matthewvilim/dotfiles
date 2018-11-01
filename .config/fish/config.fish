@@ -6,7 +6,7 @@ set -Ux EDITOR vim
 set LM_LICENSE_FILE 7195@cadlic0.stanford.edu
 set LM_LICENSE_FILE 27000@cadlic0.stanford.edu $LM_LICENSE_FILE
 set VCS_HOME /cad/synopsys/vcs/K-2015.09-SP2-7
-set PATH $HOME/sbt/bin $VCS_HOME/amd64/bin $PATH
+set PATH $HOME/fish-shell $HOME/sbt/bin $VCS_HOME/amd64/bin $PATH
 set PIR_HOME $HOME/pir
 set SPATIAL_HOME $HOME/spatial-lang
 set PLASTICINE_HOME $HOME/plasticine
