@@ -18,6 +18,8 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
+set completeopt-=preview
+
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
@@ -37,8 +39,8 @@ set showbreak=>>
 set breakindentopt=sbr
 
 set linebreak
-"set textwidth=100
-"set colorcolumn=+1
+set textwidth=100
+set colorcolumn=+1
 
 set number
 set relativenumber
@@ -68,8 +70,6 @@ nnoremap <silent> <leader>n :GFiles<cr>
 nnoremap <silent> <leader>N :Files<cr>
 nnoremap <silent> <leader>t :Tags<cr>
 nnoremap <silent> <leader>h :History<cr>
-nnoremap <silent> <leader>s :Lines<cr>
-nnoremap <silent> <leader>S :BLines<cr>
 nnoremap <silent> <leader>g :Ag<cr>
 
 set pastetoggle=<leader>p
@@ -80,4 +80,4 @@ nnoremap <silent> <leader>x :x<cr>
 nnoremap <silent> <leader>q :q<cr>
 nnoremap <silent> <leader>Q :q!<cr>
 
-"set fo+=aw
+set fo+=aw

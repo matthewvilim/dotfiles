@@ -12,10 +12,6 @@ alias sleep='sudo pm-suspend'
 alias cp='cp -i'
 alias ln='ln -i'
 alias mv='mv -i'
-alias v='vim'
-alias g='git'
-alias l='ls'
-alias ex='exit'
 
 export VISUAL=vim
 
@@ -43,7 +39,9 @@ alias zynq='ssh mvilim@holodeck-zc706'
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 export FZF_DEFAULT_COMMAND='ag --hidden --skip-vcs-ignores --ignore .git -g ""'
+export FZF_COMPLETION_TRIGGER=''
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
+export FZF_ALT_C_COMMAND=$FZF_DEFAULT_COMMAND
 
 _gen_fzf_default_opts() {
 
@@ -74,3 +72,12 @@ export FZF_DEFAULT_OPTS="
 
 _gen_fzf_default_opts
 
+vv() {
+  local file
+  file="$(fzf)" && vim "$file"
+}
+
+dd() {
+  local dir
+  dir=$(find ${1:-.} -path '*/\.*' -prune -o -type d -print 2> /dev/null | fzf +m) && cd "$dir"
+}
