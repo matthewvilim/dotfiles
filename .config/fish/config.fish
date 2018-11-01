@@ -19,6 +19,8 @@ alias zynq 'ssh mvilim@holodeck-zc706'
 
 alias vpn 'sudo openconnect su-vpn.stanford.edu'
 alias sleep 'sudo pm-suspend'
+alias cp 'cp -i'
+alias mv 'mv -i'
 abbr l 'ls'
 abbr g 'git'
 abbr v 'vim'
