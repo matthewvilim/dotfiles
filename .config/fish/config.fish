@@ -37,3 +37,22 @@ end
 
 function fish_mode_prompt
 end
+
+set __fish_git_prompt_color_branch yellow
+
+function fish_right_prompt
+  __fish_git_prompt
+end
+
+function fish_user_key_bindings
+  fzf_key_bindings
+  bind -M insert \cn accept-autosuggestion
+end
+
+function fish_prompt --description 'Write out the prompt'
+	if test -z $WINDOW
+        printf '%s%s@%s%s%s%s%s> ' (set_color yellow) (whoami) (set_color purple) (prompt_hostname) (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
+    else
+        printf '%s%s@%s%s%s(%s)%s%s%s> ' (set_color yellow) (whoami) (set_color purple) (prompt_hostname) (set_color white) (echo $WINDOW) (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
+    end
+end
