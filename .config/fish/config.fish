@@ -12,18 +12,13 @@ set SPATIAL_HOME $HOME/spatial-lang
 set PLASTICINE_HOME $HOME/plasticine
 set _JAVA_OPTIONS "-Xmx32g -Xss8912k -Xms16g"
 
-#export XILINX_VIVADO=/opt/Xilinx/Vivado/2017.1
-#export PATH=$XILINX_VIVADO/bin:$PATH
-#alias zycp='scp $(basename $(pwd)).tar.gz mvilim@holodeck-zc706:'
-#alias zynq='ssh mvilim@holodeck-zc706'
+set XILINX_VIVADO /opt/Xilinx/Vivado/2017.1
+set PATH $XILINX_VIVADO/bin $PATH
+#alias zycp 'scp $(basename $(pwd)).tar.gz mvilim@holodeck-zc706:'
+alias zynq 'ssh mvilim@holodeck-zc706'
 
-alias less 'less -R'
-alias grep 'grep --color=always --exclude=tags'
 alias vpn 'sudo openconnect su-vpn.stanford.edu'
 alias sleep 'sudo pm-suspend'
-alias cp 'cp -i'
-alias ls 'ls -i'
-alias mv 'mv -i'
 
 #set -gx FZF_DEFAULT_COMMAND  'rg --files --no-ignore-vcs --hidden'
 
@@ -32,7 +27,8 @@ function c
 end
 
 function v
-  vim fzf-file-widget
+  set file (fzf)
+  and vim $file
 end
 
 function h
