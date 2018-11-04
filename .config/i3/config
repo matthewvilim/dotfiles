@@ -26,11 +26,11 @@ font xft:Source Code Pro 10
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
-exec --no-startup-id redshift
 exec_always --no-startup-id xautolock -time 15 -locker "i3lock -u -c 002b36" -detectsleep
 exec "xset r rate 200 30"
 exec "xkbset accessx sticky -twokey -latchlock"
 exec "xkbset exp 1 =accessx =sticky =twokey =latchlock"
+exec --no-startup-id xflux -z 94063
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
