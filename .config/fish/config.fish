@@ -10,7 +10,7 @@ set -gx PIR_HOME $HOME/pir
 set -gx SPATIAL_HOME $HOME/spatial-lang
 set -gx PLASTICINE_HOME $HOME/plasticine
 set -gx _JAVA_OPTIONS "-Xmx32g -Xss8912k -Xms16g"
-set PATH $HOME/.local/bin $HOME/fish-shell $HOME/sbt/bin $VCS_HOME/amd64/bin $PATH
+set PATH $HOME/.local/bin $HOME/fish-shell $HOME/sbt/bin $VCS_HOME/amd64/bin $HOME/.cargo/bin $PATH
 
 set XILINX_VIVADO /opt/Xilinx/Vivado/2017.1
 set -Ux PATH $XILINX_VIVADO/bin $PATH
@@ -26,7 +26,9 @@ abbr g 'git'
 abbr v 'vim'
 abbr c 'cd'
 
-#set -gx FZF_DEFAULT_COMMAND  'rg --files --no-ignore-vcs --hidden'
+set -gx FZF_DEFAULT_COMMAND 'fd . '\$dir' --type f -I'
+set -gx FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
+set -gx FZF_ALT_C_COMMAND 'fd . '\$dir' --type d -I'
 
 function fish_mode_prompt
 end
