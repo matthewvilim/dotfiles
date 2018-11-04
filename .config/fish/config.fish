@@ -5,12 +5,12 @@ set -Ux EDITOR vim
 
 set -Ux LM_LICENSE_FILE 7195@cadlic0.stanford.edu
 set -Ux LM_LICENSE_FILE 27000@cadlic0.stanford.edu $LM_LICENSE_FILE
-set -Ux VCS_HOME /cad/synopsys/vcs/K-2015.09-SP2-7
-set -Ux PATH $HOME/.local/bin $HOME/fish-shell $HOME/sbt/bin $VCS_HOME/amd64/bin $PATH
+set -Ux VCS_HOME /cad/synopsys/vcs/K-2015.09-SP2-7/
 set -Ux PIR_HOME $HOME/pir
 set -Ux SPATIAL_HOME $HOME/spatial-lang
 set -Ux PLASTICINE_HOME $HOME/plasticine
 set -Ux _JAVA_OPTIONS "-Xmx32g -Xss8912k -Xms16g"
+set PATH $HOME/.local/bin $HOME/fish-shell $HOME/sbt/bin $VCS_HOME/amd64/bin $PATH
 
 set XILINX_VIVADO /opt/Xilinx/Vivado/2017.1
 set -Ux PATH $XILINX_VIVADO/bin $PATH
@@ -24,21 +24,9 @@ alias mv 'mv -i'
 abbr l 'ls'
 abbr g 'git'
 abbr v 'vim'
+abbr c 'cd'
 
 #set -gx FZF_DEFAULT_COMMAND  'rg --files --no-ignore-vcs --hidden'
-
-function c
-  fzf-cd-widget
-end
-
-function n
-  set file (fzf)
-  and vim $file
-end
-
-function h
-  fzf-history-widget
-end
 
 function fish_mode_prompt
 end
