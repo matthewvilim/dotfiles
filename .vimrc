@@ -69,7 +69,7 @@ nnoremap <silent> <leader>n :GFiles<cr>
 nnoremap <silent> <leader>N :Files<cr>
 nnoremap <silent> <leader>t :Tags<cr>
 nnoremap <silent> <leader>h :History<cr>
-nnoremap <silent> <leader>g :Ag<cr>
+nnoremap <silent> <leader>g :Rg<cr>
 
 set pastetoggle=<leader>p
 map <silent> <leader>i :noh<cr>
