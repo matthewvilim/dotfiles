@@ -3,13 +3,13 @@ set -g fish_key_bindings fish_vi_key_bindings
 
 set -Ux EDITOR vim
 
-set -Ux LM_LICENSE_FILE 7195@cadlic0.stanford.edu
-set -Ux LM_LICENSE_FILE 27000@cadlic0.stanford.edu $LM_LICENSE_FILE
-set -Ux VCS_HOME /cad/synopsys/vcs/K-2015.09-SP2-7/
-set -Ux PIR_HOME $HOME/pir
-set -Ux SPATIAL_HOME $HOME/spatial-lang
-set -Ux PLASTICINE_HOME $HOME/plasticine
-set -Ux _JAVA_OPTIONS "-Xmx32g -Xss8912k -Xms16g"
+set -gx LM_LICENSE_FILE 7195@cadlic0.stanford.edu
+set -gx LM_LICENSE_FILE 27000@cadlic0.stanford.edu:$LM_LICENSE_FILE
+set -gx VCS_HOME /cad/synopsys/vcs/K-2015.09-SP2-7
+set -gx PIR_HOME $HOME/pir
+set -gx SPATIAL_HOME $HOME/spatial-lang
+set -gx PLASTICINE_HOME $HOME/plasticine
+set -gx _JAVA_OPTIONS "-Xmx32g -Xss8912k -Xms16g"
 set PATH $HOME/.local/bin $HOME/fish-shell $HOME/sbt/bin $VCS_HOME/amd64/bin $PATH
 
 set XILINX_VIVADO /opt/Xilinx/Vivado/2017.1
