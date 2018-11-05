@@ -3,6 +3,14 @@ set -g fish_key_bindings fish_vi_key_bindings
 
 set -Ux EDITOR vim
 
+set -gx PATH $HOME/.local/bin $PATH
+set -gx PATH $HOME/.cargo/bin $PATH
+
+set -gx PATH $HOME/fish-shell $PATH
+set -gx PATH $HOME/sbt/bin $PATH
+set -gx PATH $VCS_HOME/amd64/bin $PATH
+set -gx PATH /opt/Xilinx/Vivado/2017.1/bin $PATH
+
 set -gx LM_LICENSE_FILE 7195@cadlic0.stanford.edu
 set -gx LM_LICENSE_FILE 27000@cadlic0.stanford.edu:$LM_LICENSE_FILE
 set -gx VCS_HOME /cad/synopsys/vcs/K-2015.09-SP2-7
@@ -10,10 +18,7 @@ set -gx PIR_HOME $HOME/pir
 set -gx SPATIAL_HOME $HOME/spatial-lang
 set -gx PLASTICINE_HOME $HOME/plasticine
 set -gx _JAVA_OPTIONS "-Xmx32g -Xss8912k -Xms16g"
-set PATH $HOME/.local/bin $HOME/fish-shell $HOME/sbt/bin $VCS_HOME/amd64/bin $HOME/.cargo/bin $PATH
 
-set XILINX_VIVADO /opt/Xilinx/Vivado/2017.1
-set -Ux PATH $XILINX_VIVADO/bin $PATH
 #alias zycp 'scp $(basename $(pwd)).tar.gz mvilim@holodeck-zc706:'
 alias zynq 'ssh mvilim@holodeck-zc706'
 
@@ -25,10 +30,6 @@ abbr l 'ls'
 abbr g 'git'
 abbr v 'vim'
 abbr c 'cd'
-
-set -gx FZF_DEFAULT_COMMAND 'fd . '\$dir' --type f -I'
-set -gx FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
-set -gx FZF_ALT_C_COMMAND 'fd . '\$dir' --type d -I'
 
 function fish_mode_prompt
 end
@@ -51,6 +52,10 @@ function fish_prompt --description 'Write out the prompt'
         printf '%s%s@%s%s%s(%s)%s%s%s> ' (set_color yellow) (whoami) (set_color purple) (prompt_hostname) (set_color white) (echo $WINDOW) (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
     end
 end
+
+set -gx FZF_DEFAULT_COMMAND 'fd . '\$dir' --type f -I'
+set -gx FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
+set -gx FZF_ALT_C_COMMAND 'fd . '\$dir' --type d -I'
 
 set -l color00 '#002b36'
 set -l color01 '#073642'
