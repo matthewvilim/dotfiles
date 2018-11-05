@@ -59,6 +59,8 @@ set cursorline
 
 set timeoutlen=1000 ttimeoutlen=0
 
+set ls=2
+
 let mapleader = "\<space>"
 
 map <leader>u <C-]>
