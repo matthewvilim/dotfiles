@@ -1,6 +1,3 @@
-set fish_greeting
-set -g fish_key_bindings fish_vi_key_bindings
-
 set -Ux EDITOR vim
 
 set -gx PATH $HOME/.local/bin $PATH
@@ -26,10 +23,14 @@ alias vpn 'sudo openconnect su-vpn.stanford.edu'
 alias sleep 'sudo pm-suspend'
 alias cp 'cp -i'
 alias mv 'mv -i'
+alias rg 'rg -p'
+alias less 'less -R'
 abbr l 'ls'
 abbr g 'git'
 abbr v 'vim'
 abbr c 'cd'
+
+set fish_greeting
 
 function fish_mode_prompt
 end
@@ -41,8 +42,10 @@ function fish_right_prompt
 end
 
 function fish_user_key_bindings
+  fish_vi_key_bindings
   fzf_key_bindings
   bind -M insert \cn accept-autosuggestion
+  bind -M default v edit_command_buffer
 end
 
 function fish_prompt --description 'Write out the prompt'

@@ -68,6 +68,7 @@ map <leader>U g<C-]>
 map <leader>e <C-t>
 
 nnoremap <silent> <leader>n :GFiles<cr>
+nnoremap <silent> <leader>l :Lines<cr>
 nnoremap <silent> <leader>N :Files<cr>
 nnoremap <silent> <leader>t :Tags<cr>
 nnoremap <silent> <leader>h :History<cr>
