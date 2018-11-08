@@ -18,6 +18,7 @@
   au = add -u
   c = commit
   d = diff
+  dt = difftool
   ds = diff --staged
   dw = diff --color-words
   s = status

@@ -3,11 +3,6 @@ set -Ux EDITOR vim
 set -gx PATH $HOME/.local/bin $PATH
 set -gx PATH $HOME/.cargo/bin $PATH
 
-set -gx PATH $HOME/fish-shell $PATH
-set -gx PATH $HOME/sbt/bin $PATH
-set -gx PATH $VCS_HOME/amd64/bin $PATH
-set -gx PATH /opt/Xilinx/Vivado/2017.1/bin $PATH
-
 set -gx LM_LICENSE_FILE 7195@cadlic0.stanford.edu
 set -gx LM_LICENSE_FILE 27000@cadlic0.stanford.edu:$LM_LICENSE_FILE
 set -gx VCS_HOME /cad/synopsys/vcs/K-2015.09-SP2-7
@@ -15,6 +10,11 @@ set -gx PIR_HOME $HOME/pir
 set -gx SPATIAL_HOME $HOME/spatial-lang
 set -gx PLASTICINE_HOME $HOME/plasticine
 set -gx _JAVA_OPTIONS "-Xmx32g -Xss8912k -Xms16g"
+
+set -gx PATH $HOME/fish-shell $PATH
+set -gx PATH $HOME/sbt/bin $PATH
+set -gx PATH $VCS_HOME/amd64/bin $PATH
+set -gx PATH /opt/Xilinx/Vivado/2017.1/bin $PATH
 
 #alias zycp 'scp $(basename $(pwd)).tar.gz mvilim@holodeck-zc706:'
 alias zynq 'ssh mvilim@holodeck-zc706'
