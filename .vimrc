@@ -10,12 +10,15 @@ Plug 'valloric/youcompleteme', { 'do': './install.py' }
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+let g:EasyMotion_smartcase = 1
 
 set completeopt-=preview
 
@@ -39,7 +42,6 @@ set breakindentopt=sbr
 
 set linebreak
 set textwidth=100
-set colorcolumn=+1
 
 set number
 set relativenumber
@@ -81,3 +83,5 @@ nnoremap <silent> <leader>w :w<cr>
 nnoremap <silent> <leader>x :x<cr>
 nnoremap <silent> <leader>q :q<cr>
 nnoremap <silent> <leader>Q :q!<cr>
+
+map <backspace> <Plug>(easymotion-overwin-f2)
