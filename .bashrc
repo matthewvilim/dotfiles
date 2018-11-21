@@ -16,15 +16,17 @@ alias ln='ln -i'
 alias mv='mv -i'
 
 export VISUAL=vim
-export  FRINGE_PACKAGE=test
+export FRINGE_PACKAGE=test
 
-source ~/git-prompt.sh
 inputcolor="[0;38m";
 usercolor="[0;32m";
 hostcolor="[0;35m";
 cwdcolor='[0;34m'
 gitcolor='[1;31m'
-PS1='\[\e${usercolor}\]\u@\[\e${hostcolor}\]\h \[\e${cwdcolor}\]\W\[\e${gitcolor}\]$(__git_ps1 " (%s)")\[\e${inputcolor}\]\$ '
+git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+PS1='\[\e${usercolor}\]\u@\[\e${hostcolor}\]\h \[\e${cwdcolor}\]\W\[\e${gitcolor}\]$(git_branch)\[\e${inputcolor}\]\$ '
 
 export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
 export PATH=/opt/cisco/anyconnect/bin:$PATH
