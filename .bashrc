@@ -18,16 +18,6 @@ alias mv='mv -i'
 export VISUAL=vim
 export FRINGE_PACKAGE=test
 
-inputcolor="[0;38m";
-usercolor="[0;32m";
-hostcolor="[0;35m";
-cwdcolor='[0;34m'
-gitcolor='[1;31m'
-git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-PS1='\[\e${usercolor}\]\u@\[\e${hostcolor}\]\h \[\e${cwdcolor}\]\W\[\e${gitcolor}\]$(git_branch)\[\e${inputcolor}\]\$ '
-
 export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
 export PATH=/opt/cisco/anyconnect/bin:$PATH
 export PATH=/cad/synopsys/pts/M-2017.06-SP3/bin:/cad/synopsys/icc/M-2016.12-SP2/bin:/cad/synopsys/dc_shell/latest/bin:$PATH
@@ -81,3 +71,14 @@ export FZF_DEFAULT_OPTS="
 }
 
 _gen_fzf_default_opts
+
+inputcolor="[0;38m";
+usercolor="[0;32m";
+hostcolor="[0;35m";
+cwdcolor='[0;34m'
+gitcolor='[1;31m'
+git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+PS1='\[\e${usercolor}\]\u@\[\e${hostcolor}\]\h \[\e${cwdcolor}\]\W\[\e${gitcolor}\]$(git_branch)\[\e${inputcolor}\]\$ '
+
