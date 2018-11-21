@@ -11,10 +11,10 @@ set -gx SPATIAL_HOME $HOME/spatial-lang
 set -gx PLASTICINE_HOME $HOME/plasticine
 set -gx _JAVA_OPTIONS "-Xmx32g -Xss8912k -Xms16g"
 
-set -gx PATH $HOME/fish-shell $PATH
-set -gx PATH $HOME/sbt/bin $PATH
-set -gx PATH $VCS_HOME/amd64/bin $PATH
-set -gx PATH /opt/Xilinx/Vivado/2017.1/bin $PATH
+#set -gx PATH $HOME/fish-shell $PATH
+#set -gx PATH $HOME/sbt/bin $PATH
+#set -gx PATH $VCS_HOME/amd64/bin $PATH
+#set -gx PATH /opt/Xilinx/Vivado/2017.1/bin $PATH
 
 #alias zycp 'scp $(basename $(pwd)).tar.gz mvilim@holodeck-zc706:'
 alias zynq 'ssh mvilim@holodeck-zc706'
