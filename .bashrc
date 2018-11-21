@@ -5,7 +5,7 @@ export HISTFILESIZE=100000
 export PROMPT_COMMAND='history -a'
 
 alias ls='ls -1 --color=auto --group-directories-first'
-alias h='ls'
+alias e='exa --long'
 alias v='vim'
 alias g='git'
 alias c='cd'
