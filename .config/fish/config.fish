@@ -15,6 +15,9 @@ set -gx PATH $HOME/fish-shell $PATH
 set -gx PATH $HOME/sbt/bin $PATH
 set -gx PATH $VCS_HOME/amd64/bin $PATH
 set -gx PATH /opt/Xilinx/Vivado/2017.1/bin $PATH
+set -gx PATH /cad/synopsys/pts/M-2017.06-SP3/bin /cad/synopsys/icc/M-2016.12-SP2/bin /cad/synopsys/dc_shell/latest/bin $PATH
+
+set -gx FRINGE_PACKAGE test
 
 #alias zycp 'scp $(basename $(pwd)).tar.gz mvilim@holodeck-zc706:'
 alias zynq 'ssh mvilim@holodeck-zc706'
