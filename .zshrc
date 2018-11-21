@@ -48,7 +48,7 @@ export PATH=$XILINX_VIVADO/bin:$PATH
 alias zycp='scp $(basename $(pwd)).tar.gz mvilim@holodeck-zc706:'
 alias zynq='ssh mvilim@holodeck-zc706'
 
-source "/home/mvilim/.fzf/shell/key-bindings.zsh"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export FZF_DEFAULT_COMMAND='fd . '\$dir' --type f -I'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
@@ -83,4 +83,3 @@ export FZF_DEFAULT_OPTS="
 
 _gen_fzf_default_opts
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
