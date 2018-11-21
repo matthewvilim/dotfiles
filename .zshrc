@@ -15,7 +15,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
 
-alias h='exa --long'
+alias h='ls'
 alias v='vim'
 alias g='git'
 alias c='cd'
@@ -29,7 +29,7 @@ alias mv='mv -i'
 export VISUAL=vim
 export FRINGE_PACKAGE=test
 
-export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.fzf/bin:$HOME/.local/bin:$HOME/.cargo/bin:$PATH
 export PATH=/opt/cisco/anyconnect/bin:$PATH
 export PATH=/cad/synopsys/pts/M-2017.06-SP3/bin:/cad/synopsys/icc/M-2016.12-SP2/bin:/cad/synopsys/dc_shell/latest/bin:$PATH
 export VCS_HOME=/cad/synopsys/vcs/K-2015.09-SP2-7
