@@ -1,4 +1,4 @@
-ZSH_THEME="agnoster"
+ZSH_THEME="pygmalion"
 export ZSH="/home/mvilim/.oh-my-zsh"
 
 plugins=(
@@ -7,10 +7,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-#autoload -Uz promptinit
-#promptinit
-#prompt adam1
-#
 setopt histignorealldups sharehistory
 
 bindkey -v
