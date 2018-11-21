@@ -1,4 +1,4 @@
-ZSH_THEME="agnoster"
+ZSH_THEME="pygmalion"
 export ZSH="/home/mvilim/.oh-my-zsh"
 
 plugins=(
