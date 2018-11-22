@@ -16,7 +16,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
 
-alias h='ls'
+alias h='exa --long'
 alias v='vim'
 alias g='git'
 alias c='cd'
