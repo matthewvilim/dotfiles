@@ -53,7 +53,6 @@ alias zynq='ssh mvilim@holodeck-zc706'
 export FZF_DEFAULT_COMMAND='fd . '\$dir' --type f -I'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 export FZF_ALT_C_COMMAND='fd . '\$dir' --type d -I'
-export FZF_COMPLETION_TRIGGER=''
 
 _gen_fzf_default_opts() {
 
