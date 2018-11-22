@@ -1,15 +1,16 @@
-ZSH_THEME="punctual"
-export ZSH="/home/mvilim/.oh-my-zsh"
+source ~/.zplug/init.zsh
 
-plugins=(
-  git
-)
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug mafredri/zsh-async, from:github
+zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
 
-source $ZSH/oh-my-zsh.sh
+zplug load
 
 setopt histignorealldups sharehistory
 
 bindkey -v
+
+KEYTIMEOUT=1
 
 HISTSIZE=10000
 SAVEHIST=10000
