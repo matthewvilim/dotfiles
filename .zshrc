@@ -1,4 +1,4 @@
-ZSH_THEME="pygmalion"
+ZSH_THEME="punctual"
 export ZSH="/home/mvilim/.oh-my-zsh"
 
 plugins=(
