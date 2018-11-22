@@ -41,7 +41,6 @@ set showbreak=>>
 set breakindentopt=sbr
 
 set linebreak
-set textwidth=100
 
 set number
 set relativenumber
