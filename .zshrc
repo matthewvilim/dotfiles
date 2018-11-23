@@ -16,6 +16,8 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
 
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
 alias h='exa --long --git'
 alias v='vim'
 alias g='git'
