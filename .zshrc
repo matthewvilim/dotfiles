@@ -18,7 +18,7 @@ HISTFILE=~/.zsh_history
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
-alias h='exa --long --git'
+alias h='exa --long --git --group-directories-first'
 alias v='vim'
 alias g='git'
 alias c='cd'
