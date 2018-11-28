@@ -21,7 +21,8 @@ HISTFILE=~/.zsh_history
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
-alias h='exa --long -F'
+alias h='exa --color=always --long -F'
+alias r='rg --color=always --pretty'
 alias hh='h -a'
 alias v='vim'
 alias g='git'
@@ -33,6 +34,7 @@ alias sleep='sudo pm-suspend'
 alias cp='cp -i'
 alias ln='ln -i'
 alias mv='mv -i'
+alias less='less -R'
 alias -g l='| less'
 alias tn='tmux new'
 alias ta='tmux attach'
