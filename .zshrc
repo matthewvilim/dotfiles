@@ -7,6 +7,7 @@ zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
 zplug load
 
 setopt histignorealldups sharehistory
+setopt auto_menu
 
 bindkey -v
 autoload -U edit-command-line
