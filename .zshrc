@@ -26,6 +26,7 @@ alias hh='h -a'
 alias v='vim'
 alias g='git'
 alias t='cd'
+alias ..='t ..'
 alias less='less -R'
 alias vpn='sudo openconnect su-vpn.stanford.edu'
 alias sleep='sudo pm-suspend'
@@ -33,6 +34,8 @@ alias cp='cp -i'
 alias ln='ln -i'
 alias mv='mv -i'
 alias -g l='| less'
+alias tn='tmux new'
+alias ta='tmux attach'
 
 export VISUAL=vim
 export FRINGE_PACKAGE=test
