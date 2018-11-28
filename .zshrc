@@ -29,6 +29,7 @@ alias sleep='sudo pm-suspend'
 alias cp='cp -i'
 alias ln='ln -i'
 alias mv='mv -i'
+alias -g l='| less'
 
 export VISUAL=vim
 export FRINGE_PACKAGE=test
