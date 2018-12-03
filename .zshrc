@@ -20,7 +20,7 @@ fi
 
 zplug load
 
-setopt histignorealldups sharehistory
+setopt inc_append_history hist_ignore_dups
 setopt auto_menu
 
 bindkey -v
