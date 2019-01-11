@@ -63,7 +63,7 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -oid,%cpu,tty,cputime,cmd'
 
 alias h='exa --color=always --long -F'
-alias rg='rg --color=always --pretty'
+alias rg='rg -S --color=always --pretty'
 alias hh='h -a'
 alias v='vim'
 alias g='git'
