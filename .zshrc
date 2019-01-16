@@ -108,7 +108,7 @@ bindkey '^T' fzf-completion
 bindkey '^I' $fzf_default_completion
 
 _fzf_compgen_path() {
-  fd --type f --hidden --follow --exclude ".git" . "$1"
+  fd --hidden --follow --exclude ".git" . "$1"
 }
 
 _fzf_compgen_dir() {
