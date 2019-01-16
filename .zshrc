@@ -103,7 +103,9 @@ alias zynq='ssh mvilim@holodeck-zc706'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export FZF_COMPLETION_TRIGGER=''
+#export FZF_COMPLETION_TRIGGER=''
+bindkey '^T' fzf-completion
+bindkey '^I' $fzf_default_completion
 
 _fzf_compgen_path() {
   fd --hidden --follow --exclude ".git" . "$1"
