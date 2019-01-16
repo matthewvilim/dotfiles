@@ -17,6 +17,9 @@
   a = add
   au = add -u
   c = commit
+  pl = pull
+  ps = push
+  co = checkout
   d = diff
   dt = difftool
   ds = diff --staged
