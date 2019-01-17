@@ -25,3 +25,4 @@
   ds = diff --staged
   dw = diff --color-words
   s = status
+  sh = show
