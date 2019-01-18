@@ -107,16 +107,16 @@ export FZF_COMPLETION_TRIGGER=''
 bindkey '^T' fzf-completion
 bindkey '^I' $fzf_default_completion
 
-export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude ".git""
+export FZF_DEFAULT_COMMAND="fd --type f --exclude ".git""
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd --type d --hidden --follow --exclude ".git""
+export FZF_ALT_C_COMMAND="fd --type d --exclude ".git""
 
 _fzf_compgen_path() {
-  fd --type f --hidden --follow --exclude ".git" . "$1"
+  fd --type f --exclude ".git" . "$1"
 }
 
 _fzf_compgen_dir() {
-  fd --type d --hidden --follow --exclude ".git" . "$1"
+  fd --type d --exclude ".git" . "$1"
 }
 
 _gen_fzf_default_opts() {
