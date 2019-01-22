@@ -31,7 +31,7 @@ exec "xset r rate 200 30"
 exec xinput set-prop "Logitech M570" "libinput Accel Speed" 0.45
 exec "xkbset accessx sticky -twokey -latchlock"
 exec "xkbset exp 1 =accessx =sticky =twokey =latchlock"
-exec redshift -l 37:122 -t 2000:2000
+exec redshift -l 37:122 -t 4000:2000
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
