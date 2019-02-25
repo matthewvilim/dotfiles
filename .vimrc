@@ -47,7 +47,7 @@ set relativenumber
 set showcmd
 set scrolloff=10
 
-set tags=./tags;
+set tags=./.tags;
 
 set autoindent
 set smartindent
