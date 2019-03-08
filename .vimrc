@@ -47,7 +47,7 @@ set relativenumber
 set showcmd
 set scrolloff=10
 
-set tags=./tags;
+set tags=./.tags;
 
 set autoindent
 set smartindent
@@ -77,6 +77,7 @@ nnoremap <silent> <leader>g :Rg<cr>
 
 set pastetoggle=<leader>p
 map <silent> <leader>i :noh<cr>
+map <silent> <leader>m :!make<cr>
 
 nnoremap <silent> <leader>w :w<cr>
 nnoremap <silent> <leader>x :x<cr>

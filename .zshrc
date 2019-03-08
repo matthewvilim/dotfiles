@@ -81,6 +81,7 @@ alias ta='tmux attach'
 
 export VISUAL=vim
 export FRINGE_PACKAGE=test
+export EMUL_PACKAGE=test
 
 export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
 export PATH=$HOME/eagle:$PATH
@@ -94,6 +95,7 @@ export VCS_HOME=/cad/synopsys/vcs/K-2015.09-SP2-7
 export PATH=$HOME/go/bin:$HOME/sbt/bin:$VCS_HOME/amd64/bin:$PATH
 export PIR_HOME=$HOME/pir
 export SPATIAL_HOME=$HOME/spatial-lang
+export TEST_DATA_HOME=/home/mattfel/test-data/
 export PLASTICINE_HOME=$HOME/plasticine
 export _JAVA_OPTIONS="-Xmx32g -Xss8912k -Xms16g"
 
