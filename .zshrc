@@ -84,6 +84,7 @@ export FRINGE_PACKAGE=test
 export EMUL_PACKAGE=test
 
 export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
+export PATH=$HOME/eagle:$PATH
 export PATH=/opt/cisco/anyconnect/bin:$PATH
 export PATH=/cad/synopsys/pts/M-2017.06-SP3/bin:/cad/synopsys/icc/M-2016.12-SP2/bin:/cad/synopsys/dc_shell/latest/bin:$PATH
 export VCS_HOME=/cad/synopsys/vcs/K-2015.09-SP2-7
