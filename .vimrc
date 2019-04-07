@@ -85,3 +85,5 @@ nnoremap <silent> <leader>q :q<cr>
 nnoremap <silent> <leader>Q :q!<cr>
 
 map <backspace> <Plug>(easymotion-overwin-f2)
+
+au BufNewFile,BufRead *.tikz set filetype=tex
