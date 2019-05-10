@@ -10,6 +10,8 @@ Plug 'valloric/youcompleteme', { 'do': './install.py' }
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'tpope/vim-fugitive'
 Plug 'easymotion/vim-easymotion'
 call plug#end()
 
@@ -85,5 +87,18 @@ nnoremap <silent> <leader>q :q<cr>
 nnoremap <silent> <leader>Q :q!<cr>
 
 map <backspace> <Plug>(easymotion-overwin-f2)
+
+nmap m <Plug>(EasyAlign)
+xmap m <Plug>(EasyAlign)
+
+nmap <leader>gb :Gblame<cr>
+nmap <leader>gc :Gcommit<cr>
+nmap <leader>gd :Gdiff<cr>
+nmap <leader>gg :Ggrep
+nmap <leader>gl :Glog<cr>
+nmap <leader>gp :Gitull<cr>
+nmap <leader>gP :Gitush<cr>
+nmap <leader>gs :Gstatus<cr>
+nmap <leader>gw :Gbrowse<cr>
 
 au BufNewFile,BufRead *.tikz set filetype=tex
