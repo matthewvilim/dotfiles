@@ -15,6 +15,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'easymotion/vim-easymotion'
 call plug#end()
 
+packadd termdebug
+
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
@@ -86,7 +88,13 @@ nnoremap <silent> <leader>x :x<cr>
 nnoremap <silent> <leader>q :q<cr>
 nnoremap <silent> <leader>Q :q!<cr>
 
-map <backspace> <Plug>(easymotion-overwin-f2)
+nnoremap <silent> <leader>dd :Termdebug<cr>
+nnoremap <silent> <leader>dr :Run<cr>
+nnoremap <silent> <leader>ds :Step<cr>
+nnoremap <silent> <leader>dn :Over<cr>
+nnoremap <silent> <leader>df :Finish<cr>
+nnoremap <silent> <leader>dc :Continue<cr>
+nnoremap <silent> <leader>db :Break<cr>
 
 nmap m <Plug>(EasyAlign)
 xmap m <Plug>(EasyAlign)
