@@ -88,13 +88,10 @@ nnoremap <silent> <leader>x :x<cr>
 nnoremap <silent> <leader>q :q<cr>
 nnoremap <silent> <leader>Q :q!<cr>
 
-nnoremap <silent> <leader>dd :Termdebug<cr>
-nnoremap <silent> <leader>dr :Run<cr>
-nnoremap <silent> <leader>ds :Step<cr>
-nnoremap <silent> <leader>dn :Over<cr>
-nnoremap <silent> <leader>df :Finish<cr>
-nnoremap <silent> <leader>dc :Continue<cr>
-nnoremap <silent> <leader>db :Break<cr>
+let g:termdebug_wide = 1
+nnoremap <silent> <leader>d :Termdebug<cr>
+
+tnoremap <Esc> <C-W>N
 
 nmap m <Plug>(EasyAlign)
 xmap m <Plug>(EasyAlign)
