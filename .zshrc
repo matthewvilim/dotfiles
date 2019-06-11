@@ -78,6 +78,7 @@ alias less='less -R'
 alias -g l='| less'
 alias tn='tmux new'
 alias ta='tmux attach'
+alias tb='tabview'
 
 export VISUAL=vim
 export FRINGE_PACKAGE=test
@@ -151,3 +152,4 @@ export FZF_DEFAULT_OPTS="
 
 _gen_fzf_default_opts
 
+export PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig
