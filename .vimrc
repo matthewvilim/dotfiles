@@ -13,6 +13,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-fugitive'
 Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 au VimEnter * RainbowParenthesesToggle
@@ -85,8 +86,6 @@ nnoremap <silent> <leader>w :w<cr>
 nnoremap <silent> <leader>x :x<cr>
 nnoremap <silent> <leader>q :q<cr>
 nnoremap <silent> <leader>Q :q!<cr>
-
-tnoremap <Esc> <C-W>N
 
 nmap m <Plug>(EasyAlign)
 xmap m <Plug>(EasyAlign)
