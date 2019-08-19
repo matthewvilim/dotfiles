@@ -13,9 +13,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-fugitive'
 Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-fugitive'
 call plug#end()
-
-packadd termdebug
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
@@ -88,12 +87,11 @@ nnoremap <silent> <leader>x :x<cr>
 nnoremap <silent> <leader>q :q<cr>
 nnoremap <silent> <leader>Q :q!<cr>
 
-let g:termdebug_wide = 1
-nnoremap <silent> <leader>d :Termdebug<cr>
-
-tnoremap <Esc> <C-W>N
-
 nmap m <Plug>(EasyAlign)
 xmap m <Plug>(EasyAlign)
+
+let g:ycm_filetype_specific_completion_to_disable = {
+      \ 'python': 1
+      \}
 
 au BufNewFile,BufRead *.tikz set filetype=tex

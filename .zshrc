@@ -78,6 +78,7 @@ alias less='less -R'
 alias -g l='| less'
 alias tn='tmux new'
 alias ta='tmux attach'
+alias tb='tabview'
 
 export VISUAL=vim
 export FRINGE_PACKAGE=test
@@ -92,7 +93,7 @@ export LM_LICENSE_FILE=7195@cadlic0.stanford.edu:27000@cadlic0.stanford.edu:$LM_
 
 export VCS_HOME=/cad/synopsys/vcs/K-2015.09-SP2-7
 export PATH=$HOME/go/bin:$HOME/sbt/bin:$VCS_HOME/amd64/bin:$PATH
-export PATH=$HOME/.linuxbrew/bin:$PATH
+#export PATH=$HOME/.linuxbrew/bin:$PATH
 export PIR_HOME=$HOME/pir
 export SPATIAL_HOME=$HOME/spatial-lang
 export TEST_DATA_HOME=/home/mattfel/test-data/
@@ -151,3 +152,4 @@ export FZF_DEFAULT_OPTS="
 
 _gen_fzf_default_opts
 
+export PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig
