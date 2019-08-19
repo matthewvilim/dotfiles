@@ -1,7 +1,9 @@
-alias emacsclient="emacsclient26"
-alias e="emacsclient -c -a ''"
+alias es="emacs26 --daemon"
+alias ec="emacsclient26 -t"
 alias v="vim"
+alias g="git"
 alias ..="cd .."
 alias h="ls"
 alias hh="ls -a"
 export EDITOR="e"
+alias vpn='sudo openconnect su-vpn.stanford.edu'
