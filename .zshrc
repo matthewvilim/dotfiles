@@ -153,3 +153,6 @@ export FZF_DEFAULT_OPTS="
 _gen_fzf_default_opts
 
 export PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig
+
+alias e="TERM=xterm-24bits emacsclient -a '' -nw"
+alias ekill="emacsclient -e '(kill-emacs)'"
