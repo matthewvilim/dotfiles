@@ -6,6 +6,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'lifepillar/vim-solarized8'
+Plug 'airblade/vim-gitgutter'
 Plug 'valloric/youcompleteme', { 'do': './install.py' }
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -62,6 +63,7 @@ set smartcase
 set cursorline
 
 set timeoutlen=1000 ttimeoutlen=0
+set updatetime=100
 
 set ls=2
 
@@ -72,11 +74,15 @@ map <leader>U g<C-]>
 map <leader>e <C-t>
 
 nnoremap <silent> <leader>n :GFiles<cr>
-nnoremap <silent> <leader>l :Lines<cr>
 nnoremap <silent> <leader>N :Files<cr>
+nnoremap <silent> <leader>l :Lines<cr>
 nnoremap <silent> <leader>t :Tags<cr>
 nnoremap <silent> <leader>h :History<cr>
-nnoremap <silent> <leader>g :Rg<cr>
+nnoremap <silent> <leader>e :Rg<cr>
+nnoremap <silent> <leader>gs :Gstatus<cr>
+nnoremap <silent> <leader>gd :Gdiffsplit<cr>
+nnoremap <silent> <leader>gl :Glog<cr>
+nnoremap <silent> <leader>gb :Gblame<cr>
 
 set pastetoggle=<leader>p
 map <silent> <leader>i :noh<cr>
