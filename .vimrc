@@ -63,7 +63,7 @@ set smartcase
 set cursorline
 
 set timeoutlen=1000 ttimeoutlen=0
-set updatetime=50
+set updatetime=100
 
 set ls=2
 
@@ -85,10 +85,10 @@ nnoremap <silent> <leader>gd :Gdiffsplit<cr>
 nnoremap <silent> <leader>gl :Glog<cr>
 nnoremap <silent> <leader>gb :Gblame<cr>
 
-nnoremap <silent> <leader>bv :new<cr>
-nnoremap <silent> <leader>bh :vnew<cr>
-nnoremap <silent> <leader>bb :tabnew<cr>
-nnoremap <silent> <leader>. :term ++curwin<cr>
+"nnoremap <silent> <leader>bv :new<cr>
+"nnoremap <silent> <leader>bh :vnew<cr>
+"nnoremap <silent> <leader>bb :tabnew<cr>
+"nnoremap <silent> <leader>. :term ++curwin<cr>
 
 set pastetoggle=<leader>p
 map <silent> <leader>i :noh<cr>
@@ -99,13 +99,13 @@ nnoremap <silent> <leader>x :x<cr>
 nnoremap <silent> <leader>q :q<cr>
 nnoremap <silent> <leader>Q :q!<cr>
 
-nnoremap <silent> <C-h> :wincmd h<cr>
-nnoremap <silent> <C-l> :wincmd l<cr>
-nnoremap <silent> <C-j> :wincmd j<cr>
-nnoremap <silent> <C-k> :wincmd k<cr>
+"nnoremap <silent> <C-h> :wincmd h<cr>
+"nnoremap <silent> <C-l> :wincmd l<cr>
+"nnoremap <silent> <C-j> :wincmd j<cr>
+"nnoremap <silent> <C-k> :wincmd k<cr>
 
-tnoremap <leader><Esc> <C-\><C-n>
-set termwinkey=<C-U>
+"tnoremap <leader><Esc> <C-\><C-n>
+"set termwinkey=<C-U>
 
 nmap m <Plug>(EasyAlign)
 xmap m <Plug>(EasyAlign)
