@@ -74,16 +74,22 @@ map <leader>u <C-]>
 map <leader>U g<C-]>
 map <leader>e <C-t>
 
-nnoremap <silent> <leader>n :GFiles<cr>
-nnoremap <silent> <leader>N :Files<cr>
+nnoremap <silent> <leader>r :History<cr>
+nnoremap <silent> <leader>t :GFiles<cr>
+nnoremap <silent> <leader>T :Files<cr>
+
 nnoremap <silent> <leader>l :Lines<cr>
-nnoremap <silent> <leader>t :Tags<cr>
-nnoremap <silent> <leader>h :History<cr>
-nnoremap <silent> <leader>e :Rg<cr>
+nnoremap <silent> <leader>d :Rg<cr>
+
 nnoremap <silent> <leader>gs :Gstatus<cr>
 nnoremap <silent> <leader>gd :Gdiffsplit<cr>
 nnoremap <silent> <leader>gl :Glog<cr>
 nnoremap <silent> <leader>gb :Gblame<cr>
+
+nnoremap <silent> <leader>bv :new<cr>
+nnoremap <silent> <leader>bh :vnew<cr>
+nnoremap <silent> <leader>bb :tabnew<cr>
+nnoremap <silent> <leader>. :term ++curwin<cr>
 
 set pastetoggle=<leader>p
 map <silent> <leader>i :noh<cr>
@@ -94,9 +100,20 @@ nnoremap <silent> <leader>x :x<cr>
 nnoremap <silent> <leader>q :q<cr>
 nnoremap <silent> <leader>Q :q!<cr>
 
+nnoremap <silent> <leader>h :wincmd h<cr>
+nnoremap <silent> <leader>l :wincmd l<cr>
+nnoremap <silent> <leader>j :wincmd j<cr>
+nnoremap <silent> <leader>k :wincmd k<cr>
+nnoremap <silent> <leader>n :tabn<cr>
+nnoremap <silent> <leader>p :tabp<cr>
+
+tnoremap <Esc><Esc> <C-\><C-n>
+set termwinkey=<C-U>
+
 nmap m <Plug>(EasyAlign)
 xmap m <Plug>(EasyAlign)
 
+let g:gitgutter_map_keys = 0
 set signcolumn=yes
 
 let g:ycm_filetype_specific_completion_to_disable = {
