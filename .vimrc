@@ -12,6 +12,7 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
+Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
@@ -95,6 +96,8 @@ nnoremap <silent> <leader>Q :q!<cr>
 
 nmap m <Plug>(EasyAlign)
 xmap m <Plug>(EasyAlign)
+
+set signcolumn=yes
 
 let g:ycm_filetype_specific_completion_to_disable = {
       \ 'python': 1
