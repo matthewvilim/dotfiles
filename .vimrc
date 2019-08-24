@@ -14,8 +14,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-fugitive'
+"Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 au VimEnter * RainbowParenthesesToggle
@@ -23,7 +22,7 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-let g:EasyMotion_smartcase = 1
+"let g:EasyMotion_smartcase = 1
 
 set completeopt-=preview
 
@@ -64,7 +63,7 @@ set smartcase
 set cursorline
 
 set timeoutlen=1000 ttimeoutlen=0
-set updatetime=100
+set updatetime=50
 
 set ls=2
 
@@ -74,7 +73,7 @@ map <leader>u <C-]>
 map <leader>U g<C-]>
 map <leader>e <C-t>
 
-nnoremap <silent> <leader>r :History<cr>
+nnoremap <silent> <leader>h :History<cr>
 nnoremap <silent> <leader>t :GFiles<cr>
 nnoremap <silent> <leader>T :Files<cr>
 
@@ -100,14 +99,12 @@ nnoremap <silent> <leader>x :x<cr>
 nnoremap <silent> <leader>q :q<cr>
 nnoremap <silent> <leader>Q :q!<cr>
 
-nnoremap <silent> <leader>h :wincmd h<cr>
-nnoremap <silent> <leader>l :wincmd l<cr>
-nnoremap <silent> <leader>j :wincmd j<cr>
-nnoremap <silent> <leader>k :wincmd k<cr>
-nnoremap <silent> <leader>n :tabn<cr>
-nnoremap <silent> <leader>p :tabp<cr>
+nnoremap <silent> <C-h> :wincmd h<cr>
+nnoremap <silent> <C-l> :wincmd l<cr>
+nnoremap <silent> <C-j> :wincmd j<cr>
+nnoremap <silent> <C-k> :wincmd k<cr>
 
-tnoremap <Esc><Esc> <C-\><C-n>
+tnoremap <leader><Esc> <C-\><C-n>
 set termwinkey=<C-U>
 
 nmap m <Plug>(EasyAlign)
