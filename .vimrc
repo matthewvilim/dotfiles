@@ -7,8 +7,8 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'lifepillar/vim-solarized8'
 Plug 'airblade/vim-gitgutter'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'valloric/youcompleteme', { 'do': './install.py' }
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'valloric/youcompleteme', { 'do': './install.py' }
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
