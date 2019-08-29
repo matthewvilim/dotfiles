@@ -7,7 +7,6 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'lifepillar/vim-solarized8'
 Plug 'airblade/vim-gitgutter'
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'valloric/youcompleteme', { 'do': './install.py' }
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -15,15 +14,12 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-"Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
-
-"let g:EasyMotion_smartcase = 1
 
 set completeopt-=preview
 
