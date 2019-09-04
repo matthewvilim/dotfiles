@@ -71,7 +71,7 @@ map <leader>U g<C-]>
 map <leader>e <C-t>
 
 nnoremap <silent> <leader>h :History<cr>
-nnoremap <silent> <leader>b :Buffers<cr>
+nnoremap <silent> <leader>b :Windows<cr>
 nnoremap <silent> <leader>c :Commands<cr>
 nnoremap <silent> <leader>t :GFiles<cr>
 nnoremap <silent> <leader>T :Files<cr>
