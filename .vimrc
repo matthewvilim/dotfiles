@@ -21,6 +21,8 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
+set statusline +=\ %{FugitiveStatusline()}
+
 set completeopt-=preview
 
 set termguicolors
