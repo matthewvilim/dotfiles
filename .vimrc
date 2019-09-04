@@ -76,6 +76,8 @@ nnoremap <silent> <leader>c :Commands<cr>
 nnoremap <silent> <leader>t :GFiles<cr>
 nnoremap <silent> <leader>T :Files<cr>
 
+nnoremap <silent> <leader>f :Files ~<cr>
+
 nnoremap <silent> <leader>l :Lines<cr>
 nnoremap <silent> <leader>d :Rg<cr>
 
