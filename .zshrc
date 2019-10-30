@@ -94,7 +94,7 @@ export PATH=/cad/synopsys/pts/M-2017.06-SP3/bin:/cad/synopsys/icc/M-2016.12-SP2/
 export LM_LICENSE_FILE=7195@cadlic0.stanford.edu:27000@cadlic0.stanford.edu:$LM_LICENSE_FILE
 
 export VCS_HOME=/cad/synopsys/vcs/K-2015.09-SP2-7
-export PATH=$HOME/go/bin:$HOME/sbt/bin:$VCS_HOME/amd64/bin:$PATH
+export PATH=$HOME/go/bin:$VCS_HOME/amd64/bin:$PATH
 #export PATH=$HOME/.linuxbrew/bin:$PATH
 export PIR_HOME=$HOME/pir
 export SPATIAL_HOME=$HOME/spatial-lang
@@ -104,6 +104,8 @@ export _JAVA_OPTIONS="-Xmx32g -Xss8912k -Xms16g"
 
 export XILINX_VIVADO=/opt/Xilinx/Vivado/2017.1
 export PATH=$XILINX_VIVADO/bin:$PATH
+export PATH=$HOME/firrtl/utils/bin:$PATH
+export PATH=$HOME/sbt/bin:$PATH
 alias zycp='scp $(basename $(pwd)).tar.gz mvilim@holodeck-zc706:'
 alias zynq='ssh mvilim@holodeck-zc706'
 
