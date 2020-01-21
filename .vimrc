@@ -122,3 +122,4 @@ let g:ycm_filetype_specific_completion_to_disable = {
       \}
 
 au BufNewFile,BufRead *.tikz set filetype=tex
+au BufNewFile,BufRead *.cppm set filetype=cpp
