@@ -5,7 +5,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'lifepillar/vim-solarized8'
 Plug 'airblade/vim-gitgutter'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -16,6 +15,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'nvim-treesitter/nvim-treesitter'
 call plug#end()
 
 set guicursor=
@@ -42,6 +42,15 @@ set shortmess+=c
 
 inoremap <silent><expr> <c-space> coc#refresh()
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "all",
+  highlight = {
+    enable = true,
+  },
+}
+EOF
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
@@ -87,7 +96,7 @@ set spell
 set hlsearch
 set incsearch
 set smartcase
-set cursorline
+"set cursorline
 
 set timeoutlen=1000 ttimeoutlen=0
 set updatetime=50
@@ -100,10 +109,10 @@ map <leader>u <C-]>
 map <leader>U g<C-]>
 map <leader>e <C-t>
 
-nmap <silent>D <Plug>(coc-implementation)
+nmap <leader>D <Plug>(coc-implementation)
 nmap <leader>d <Plug>(coc-definition)
-nmap <leader>R <Plug>(coc-references)
-nmap <leader>r <Plug>(coc-rename)
+nmap <leader>r <Plug>(coc-references)
+nmap <leader>R <Plug>(coc-rename)
 
 nnoremap <silent> <leader>h :History<cr>
 nnoremap <silent> <leader>b :Windows<cr>
