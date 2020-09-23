@@ -1,7 +1,7 @@
 {
   "languageserver": {
     "clangd": {
-      "command": "clangd-9",
+      "command": "clangd",
       "args": ["--background-index"],
       "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
       "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
@@ -14,5 +14,9 @@
   "list.source.words.defaultOptions": ["--interactive", "--ignore-case"],
   "coc.source.around.firstMatch": false,
   "coc.source.buffer.firstMatch": false,
-  "diagnostic.messageTarget": "echo"
+  "diagnostic.messageTarget": "echo",
+  "diagnostic.errorSign": ">",
+  "diagnostic.warningSign": ">",
+  "diagnostic.infoSign": ">",
+  "diagnostic.hintSign": ">"
 }

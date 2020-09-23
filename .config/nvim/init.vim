@@ -16,6 +16,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'nvim-treesitter/nvim-treesitter'
+":Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
 set guicursor=
@@ -42,6 +43,11 @@ set shortmess+=c
 
 inoremap <silent><expr> <c-space> coc#refresh()
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+"lua <<EOF
+"local nvim_lsp = require'nvim_lsp'
+"nvim_lsp.clangd.setup{}
+"EOF
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
