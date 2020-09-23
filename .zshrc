@@ -82,7 +82,7 @@ alias tn='tmux new'
 alias ta='tmux attach'
 alias tb='tabview'
 
-export VISUAL=vim
+export VISUAL=nvim
 export FRINGE_PACKAGE=test
 export EMUL_PACKAGE=test
 
