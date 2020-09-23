@@ -7,48 +7,48 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'lifepillar/vim-solarized8'
 Plug 'airblade/vim-gitgutter'
-"Plug 'valloric/youcompleteme', { 'do': './install.py' }
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
+Plug 'bluz71/vim-nightfly-guicolors'
 call plug#end()
 
-let g:deoplete#enable_at_startup = 1
-let g:LanguageClient_serverCommands = {
-  \ 'cpp': ['clangd-9'],
-  \ }
+set guicursor=
+
+let g:lightline = {
+      \ 'colorscheme': 'nightfly',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'fugitive', 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status',
+      \   'currentfunction': 'CocCurrentFunction',
+      \   'fugitive': 'FugitiveHead'
+      \ },
+      \ }
 
 function! CocCurrentFunction()
     return get(b:, 'coc_current_function', '')
 endfunction
 
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'cocstatus': 'coc#status',
-      \   'currentfunction': 'CocCurrentFunction'
-      \ },
-      \ }
+set cmdheight=2
+set shortmess+=c
+
+inoremap <silent><expr> <c-space> coc#refresh()
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-set laststatus=2
+set noshowmode
 set statusline=%<%f\ %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%)\ %P
 
 set completeopt-=preview
@@ -58,7 +58,7 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 set background=dark
-colorscheme solarized8
+colorscheme nightfly
 
 set tabstop=2
 set softtabstop=2
@@ -90,7 +90,7 @@ set smartcase
 set cursorline
 
 set timeoutlen=1000 ttimeoutlen=0
-set updatetime=100
+set updatetime=50
 
 set ls=2
 
@@ -99,6 +99,11 @@ let mapleader = "\<space>"
 map <leader>u <C-]>
 map <leader>U g<C-]>
 map <leader>e <C-t>
+
+nmap <silent>D <Plug>(coc-implementation)
+nmap <leader>d <Plug>(coc-definition)
+nmap <leader>R <Plug>(coc-references)
+nmap <leader>r <Plug>(coc-rename)
 
 nnoremap <silent> <leader>h :History<cr>
 nnoremap <silent> <leader>b :Windows<cr>
@@ -109,12 +114,12 @@ nnoremap <silent> <leader>T :Files<cr>
 nnoremap <silent> <leader>f :Files ~<cr>
 
 nnoremap <silent> <leader>l :Lines<cr>
-nnoremap <silent> <leader>d :Rg<cr>
+"nnoremap <silent> <leader>d :Rg<cr>
 
-nnoremap <silent> <leader>gs :Gstatus<cr>
-nnoremap <silent> <leader>gd :Gdiffsplit<cr>
-nnoremap <silent> <leader>gl :Glog<cr>
-nnoremap <silent> <leader>gb :Gblame<cr>
+"nnoremap <silent> <leader>gs :Gstatus<cr>
+"nnoremap <silent> <leader>gd :Gdiffsplit<cr>
+"nnoremap <silent> <leader>gl :Glog<cr>
+"nnoremap <silent> <leader>gb :Gblame<cr>
 
 "nnoremap <silent> <leader>bv :new<cr>
 "nnoremap <silent> <leader>bh :vnew<cr>

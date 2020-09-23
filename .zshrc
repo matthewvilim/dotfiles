@@ -67,7 +67,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -oid,%cpu,tty,cputime,cmd'
 alias h='exa --color=always --long -F'
 alias rg='rg -S --color=always --pretty'
 alias hh='h -a'
-alias v='vim'
+alias v='nvim'
 alias g='git'
 alias ..='cd ..'
 alias less='less -R'
@@ -129,27 +129,23 @@ _fzf_compgen_dir() {
 
 _gen_fzf_default_opts() {
 
-local color00='#002b36'
-local color01='#073642'
-local color02='#586e75'
-local color03='#657b83'
-local color04='#839496'
-local color05='#93a1a1'
-local color06='#eee8d5'
-local color07='#fdf6e3'
-local color08='#dc322f'
-local color09='#cb4b16'
-local color0A='#b58900'
-local color0B='#859900'
-local color0C='#2aa198'
-local color0D='#268bd2'
-local color0E='#6c71c4'
-local color0F='#d33682'
+local color0='#0e293f'
+local color1='#011627'
+local color2='#21c7a8'
+local color3='#f78c6c'
+local color4='#a1aab8'
+local color5='#092236'
+local color6='#ecc48d'
+local color7='#ff5874'
+local color8='#f78c6c'
+local color9='#d6deeb'
+local color10='#2c3043'
+local color11='#f78c6c'
 
 export FZF_DEFAULT_OPTS="
-  --color=bg+:$color01,bg:$color00,spinner:$color0C,hl:$color0D
-  --color=fg:$color04,header:$color0D,info:$color0A,pointer:$color0C
-  --color=marker:$color0C,fg+:$color06,prompt:$color0A,hl+:$color0D
+  --color=bg+:$color0,bg:$color1,spinner:$color2,hl:$color3
+  --color=fg:$color4,header:$color5,info:$color6,pointer:$color7
+  --color=marker:$color8,fg+:$color9,prompt:$color10,hl+:$color11
 "
 
 }
