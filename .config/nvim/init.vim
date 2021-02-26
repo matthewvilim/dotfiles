@@ -15,10 +15,14 @@ Plug 'tpope/vim-fugitive'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 Plug 'bluz71/vim-nightfly-guicolors'
+"Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'kenn7/vim-arsync'
 ":Plug 'neovim/nvim-lspconfig'
 call plug#end()
+
+set termguicolors
+colorscheme nightfly
 
 set guicursor=
 
@@ -69,12 +73,10 @@ set statusline=%<%f\ %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%)\ %P
 
 set completeopt-=preview
 
-set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 set background=dark
-colorscheme nightfly
 
 set tabstop=2
 set softtabstop=2
